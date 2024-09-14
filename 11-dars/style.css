@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+
+/* html{
+    font-size: 30px;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #dd6060;
+  --text-color: #333;
+  --link-color: #007bff;
+  --aqlvoy: 500px;
+}
+
+.item {
+  width: 40%;
+  font-size: 20px;
+  height: 500px;
+  background-color: var(--main-bg-color);
+  color: var(--link-color);
+}
+
+.item h2 {
+  font-size: 1rem; /*30*/
+}
+
+h1 {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

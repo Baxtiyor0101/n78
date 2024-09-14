@@ -1,0 +1,97 @@
+.items {
+  /* display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; */
+}
+
+/* .item:hover { */
+/* transform: rotateY(80deg); */
+/* transform: rotateZ(360deg); */
+/* } */
+
+.item {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  margin: 10px;
+  font-size: 40px;
+  margin: 100px auto;
+  /* border: 5px solid red; */
+  /* transform:  translate(200px,100px); */
+  /* transform: translateX(200px); */
+  /* transform: translateY(200px); */
+  /* transform: rotate(-50deg); */
+  /* transform: skew(20deg,20deg); */
+  /* transform: skewX(30deg); */
+  /* transform: skewY(30deg); */
+  /* transform: scale(0.4); */
+  /* transform: scaleX(2); */
+  /* transform: scaleY(2); */
+  /* box-shadow: 10px 10px 10px rgba(0,0,0); */
+  /* transform: scale(1.5) rotate(30deg)  translate(200px, 100px) skew(30deg); */
+
+  /* transform: rotateX(40deg); */
+  /* transform: rotateY(45deg); */
+
+  /* transition: transform 2s linear; */
+  /* animation-name: test; */
+  /* animation-duration: 1s; */
+  /* animation-timing-function: ease-in-out; */
+  /* animation-timing-function: cubic-bezier(0, 0.77, 0.12, 1.08); */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+  /* animation-direction: alternate-reverse; */
+  /* animation-direction: reverse; */
+
+  /* animation-delay: 2s; */
+
+  animation: test 2s 1 2s linear alternate;
+  animation-fill-mode: none;    
+
+}
+
+/* @keyframes test {
+  from {
+    background-color: black;
+    transform: translateX(0);
+  }
+  to {
+    background-color: chartreuse;
+    transform: translateX(300px);
+  }
+} */
+
+@keyframes test {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(200px);
+    background-color: black;
+  }
+  50% {
+    transform: translate(200px, 200px);
+    background-color: blue;
+  }
+  100% {
+    transform: translatey(200px);
+    background-color: brown;
+  }
+   
+}
+
+/* .items div:first-child{
+background-color: brown;
+} */
+
+/* .items div:last-child {
+  background-color: brown;
+} */
+
+.items div:nth-child(even) {
+  background-color: brown;
+}
+
+.items div:nth-child(odd) {
+  background-color: rgb(174, 205, 16);
+}
