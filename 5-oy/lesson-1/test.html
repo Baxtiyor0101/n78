@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        margin: 20px;
+        position: absolute;
+      }
+      .red {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      // Select the box element
+      const box = document.querySelector(".box");
+
+      // Use setTimeout to add the 'red' class after a 2-second delay
+      setTimeout(() => {
+        box.classList.add("red");
+      }, 2000); // 2000 milliseconds = 2 seconds
+
+      // Use setInterval to toggle the size of the box every second
+      let isLarge = false;
+      setInterval(() => {
+        if (isLarge) {
+          box.style.width = "100px";
+          box.style.height = "100px";
+        } else {
+          box.style.width = "150px";
+          box.style.height = "150px";
+        }
+        isLarge = !isLarge; // Toggle the size
+      }, 1000); // 1000 milliseconds = 1 second
+    </script>
+  </body>
+</html>
